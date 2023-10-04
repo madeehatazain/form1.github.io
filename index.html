@@ -1,0 +1,136 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Student Details</title>
+   
+</head>
+<body bgcolor="#ECF9FF">
+
+    <form action="">
+<fieldset>
+    <legend>Personal details</legend><br>
+
+    <label for="fname">First Name:</label>
+    <input type="text" placeholder="Alexander" name="fname" id="fname" required>
+    <span style="color: red; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">*</span>
+    <br><br>
+
+    <label for="mname">Middle Name:</label>
+    <input type="text" placeholder="xyz" name="mname" id="mname">
+    <br><br>
+
+    <label for="lname">Last Name:</label>
+    <input type="text" placeholder="Grahambell" name="lname" id="lname">
+    <br><br>
+
+    <label for="dob">Date Of Birth:</label>
+    <input type="date" name="dob" id="dob" required>
+    <span style="color: red; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">*</span><br><br>
+
+    <label for="ct">Contact:</label>
+    <input type="text" placeholder="xxxxxxxxxx" name="ct" id="ct" pattern="[6-9]{1}[0-9]{9}" required>
+    <span style="color: red; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">*</span><br><br>
+
+    <label for="email">Email ID:</label>
+    <input type="email" placeholder="xyx@gmail.com" name="email" id="email" required>
+    <span style="color: red; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">*</span><br><br>
+
+</fieldset><br>
+<fieldset>
+
+    <legend>Educational details</legend><br>
+    <span style="color: red; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">*</span>
+    <label for="cname">College Name:</label>
+    <input list="lis" name="cname" id="cname" required> <br><br>
+
+    <datalist id="lis">
+
+        <option>IIT Khanpur</option>
+        <option>NIT Suratkal</option>
+        <option>BEC Bagalkote</option>
+        <option>BVB Hubli</option>
+        <option>KLE Hubli</option>
+        <option>MSR Bengalore</option>
+        <option>RV Bengalore</option>
+
+    </datalist>
+
+
+    <span style="color: red; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">*</span>
+    <label for="cr">Course:</label><br> <br>
+   
+
+    <input type="radio" name="n" id="be">
+    <label for="be">B.E</label>
+
+    <input type="radio" name="n" id="bt">
+    <label for="bt">B.Tech</label>
+
+    <input type="radio" name="n" id="mt">
+    <label for="mt">M.Tech</label>
+
+    <input type="radio" name="n" id="ph">
+    <label for="ph">Ph.D</label><br><br><br>
+
+    <span style="color: red; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">*</span>
+    <label for="">Branch:</label><br> <br>
+
+    <input type="radio" name="nm" id="cse">
+    <label for="cse">CSE</label>
+
+    <input type="radio" name="nm" id="ise">
+    <label for="ise">ISE</label>
+
+    <input type="radio" name="nm" id="ece">
+    <label for="ece">ECE</label>
+
+    <input type="radio" name="nm" id="me">
+    <label for="me">ME</label>
+
+    <input type="radio" name="nm" id="cv">
+    <label for="cv">CV</label><br><br><br>
+    
+    <span style="color: red; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">*</span>
+    <label for="yop">Year Of Passout:</label>
+    <input list="list" name="yop" id="yop" required> <br>
+
+    <datalist id="list">
+
+        <option>2017</option>
+        <option>2018</option>
+        <option>2019</option>
+        <option>2020</option>
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+
+    </datalist>
+<br><br>
+    <label for="">Skills:</label><br><br>
+
+    <input type="checkbox" name="j" id="j">
+    <label for="j">Java</label>
+
+    <input type="checkbox" name="p" id="p">
+    <label for="p">Python</label>
+
+    <input type="checkbox" name="s" id="s">
+    <label for="s">SQL</label>
+
+    <input type="checkbox" name="h" id="h">
+    <label for="h">HTML</label>
+
+    <input type="checkbox" name="c" id="c">
+    <label for="c">CSS</label><br><br><br> <br>
+
+    <span style="color: red; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">*</span>
+    <label for="pdfFile">Upload Resume: </label>
+    <input type="file" name="pdfFile" id="pdfFile" required><br><br>
+
+</fieldset><br>
+<input type="submit">
+
+</form>
+</body>
+</html>
